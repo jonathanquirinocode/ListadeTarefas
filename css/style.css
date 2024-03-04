@@ -9,4 +9,159 @@
 body{
     background-image:  url("../assets/backiee-202851-landscape.jpg");
     background-size: cover;
+
+}
+
+button{
+    background-color: #fdfdfd;
+    color: #563975;
+    border: 2px solid #563975;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+button i{
+    font-weight: bold;
+}
+
+button:hover{
+    color: #fdfdfd;
+    background-color: #563975;
+    border: 2px solid #fdfdfd;
+}
+
+input[type= "text"],
+select{
+    border: none;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* todo header */
+
+.todo-container{
+    max-width: 450px;
+    margin: 10rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* todo form */
+
+#todo-form, 
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+#todo-form p,
+#edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* todo toolbar */
+
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: 0.5rem;
+}
+
+#search{
+    margin-right: 1rem;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+}
+
+/* lista todo */
+
+.todo{
+    margin-top: 1rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #563975;
+}
+
+.done h3{
+    color: #ffffff;
+    text-decoration: line-through;
 }

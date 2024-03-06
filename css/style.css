@@ -5,6 +5,9 @@
     font-family: Helvetica;
     box-sizing: border-box;
 }
+html{
+    height: 100vh;
+}
 
 body{
     background-image:  url("../assets/backiee-202851-landscape.jpg");
